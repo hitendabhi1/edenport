@@ -1,0 +1,25 @@
+// Guttenberg and Block Editor Styles (columns, etc)
+@import '../../../../../wp-includes/css/dist/block-library/style.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+@import '../../plyr/sass/base.scss';
+@import '../../plyr/sass/plyr.scss';
+
+
+@import './global/header.scss';
+@import './global/footer.scss';
+@import './pages/showreel.scss';
+@import './pages/main-template.scss';
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(252, 252, 252);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

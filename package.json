@@ -1,0 +1,59 @@
+{
+  "name": "twentytwenty",
+  "version": "2.0.0",
+  "description": "Default WP Theme",
+  "author": "The WordPress Contributors",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "TwentyTwenty"
+  ],
+  "homepage": "https://wordpress.org/themes/twentytwenty/",
+  "bugs": {
+    "url": "https://core.trac.wordpress.org/"
+  },
+  "devDependencies": {
+    "@wordpress/browserslist-config": "^4.1.2",
+    "@wordpress/scripts": "^16.1.5",
+    "autoprefixer": "^10.4.5",
+    "concurrently": "^6.5.1",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "rtlcss": "^3.5.0",
+    "stylelint-a11y": "^1.2.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "rtlcssConfig": {
+    "options": {
+      "autoRename": false,
+      "autoRenameStrict": false,
+      "clean": true,
+      "greedy": false,
+      "processUrls": false,
+      "stringMap": []
+    },
+    "plugins": [],
+    "map": false
+  },
+  "scripts": {
+    "build": "webpack --mode development",
+    "dist": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "css-minimizer-webpack-plugin": "^4.2.1",
+    "mini-css-extract-plugin": "^2.6.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "plyr": "^3.7.2",
+    "sass-loader": "^13.1.0",
+    "uglifyjs-webpack-plugin": "^2.2.0"
+  }
+}
